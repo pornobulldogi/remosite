@@ -1,0 +1,48 @@
+/*Desktop device 1200px*/
+@media only screen and (min-width:992px) and (max-width:1199px) {
+
+.banner-context{
+    width: 70%;
+    margin-left: 20px;
+}
+.slider-item{
+    height: 250px;
+    width: 100%;
+}
+}
+
+
+/*Medium device 991px*/
+@media only screen and (min-width:768px) and (max-width:991px) {
+.banner-context{
+    width: 100%;
+    margin-left: 10px;
+}
+}
+
+/*Mobile device 320px*/
+@media only screen and (max-width:767px) {
+	.banner-context{
+    width: 100%;
+    margin-left: 10px;
+}
+.slider-item{
+    height: 250px;
+    width: 100%;
+}
+}
+
+/*Ipade device 480px*/
+@media only screen and (min-width:480px) and (max-width:767px) {
+  .banner-context{
+    width: 100%;
+    
+}
+}
+
+@media only screen and (min-width:1px) and (max-width:479px) {
+  .banner-context{
+    width: 100%;
+    margin-left: 10px;
+}
+}

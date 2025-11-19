@@ -1,0 +1,633 @@
+/*==============*********=============
+        *****index*****
+
+==============*********=============
+
+   1.Font Import
+   2.Global
+   3.header
+      3.1. nav
+      3.2.mainBody
+
+
+
+
+
+
+
+
+
+
+
+======= index over =========*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*font-family: 'Saira Condensed', sans-serif;*/
+/*============1.Font Import over==========*/
+/*============= 2.Global start ===========*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+   font-family: 'Saira Condensed', sans-serif;
+    text-transform: capitalize;
+}
+body{
+    background-color: #151515;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
+a, a:active, a:focus, a:active {text-decoration:none !important}
+a:focus {outline:0px solid}
+img {max-width:100%}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0; text-transform: capitalize;}
+.container {margin:0 auto;display:block;transition: all 0.9s ease 0s;-moz-transition: all 0.9s ease 0s;-webkit-transition: all 0.9s ease 0s;-o-transition: all 0.9s ease 0s;}
+ul,ol {margin:0;padding:0;list-style:none}
+li{list-style: none;}
+.fix {overflow: hidden;}
+.floatleft {float:left;margin-right:10px;}
+.floatright {float:right;margin-left:10px;}
+.alignleft {text-align:left}
+.alignright {text-align:right}
+.aligncenter {display:block;margin:0 auto}
+
+
+/*============= 2.Global over ===========*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*===============  3.header  start==============*/
+
+
+/*====================== nav start ===================*/
+
+
+/* banner ======================= */
+#banner{
+    display: flex;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url("../images/Banner.jpg");
+    width: 100%;
+    padding: 50px;
+    color: #fff;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin-bottom: 50px;
+    padding: 20px 0;
+    text-align: center;
+}
+.banner-context{
+    width: 40%;
+    margin-left: 30px;
+}
+.banner-context h1{
+   text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.banner-context p{
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 30px 0 40px 0;
+    font-size: 15px;
+}
+.banner-context a{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #EA4335;
+    margin-top: 10px;
+}
+.hero-user-count span{
+    text-align: right;
+}
+.hero-h1 {
+    font-size: 60px; /* adjust as needed */
+    font-weight: bold;
+    background: linear-gradient(90deg, #00C4FF 0%,   #8241eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* makes text show the gradient */
+    background-clip: text; /* for other browsers */
+}
+#banner h3{
+    margin: 25px 0;
+}
+#banner p{
+    margin: 15px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.gradient-text {
+    font-weight: bold;
+    background: linear-gradient(90deg, #00C4FF 0%, #0099FF 50%, #8241eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.banner-user span{
+    font-size: 35px;
+    
+  
+}
+.hero-user-count{
+  text-align: right;
+}
+.hero-earning-count{
+  text-align: left;
+}
+.heroBtn {
+    background: linear-gradient(90deg, #00C4FF 0%, #8241eb 100%);
+    border: none;
+    color: white;
+    font-size: 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    margin: 20px 0;
+}
+
+/* Glow effect using box-shadow */
+.heroBtn::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 12px; /* slightly bigger than button radius */
+    background: linear-gradient(90deg, #00C4FF, #8241eb);
+    filter: blur(8px);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* Optional: Hover effect */
+.heroBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 196, 255, 0.8), 0 0 25px rgba(0, 255, 204, 0.6);
+}
+
+
+.choose-us{
+    background-color: #151515;
+}
+
+
+
+/* ============================
+   GRADIENT TITLE
+=============================== */
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00C4FF 0%, #0099FF 40%, #8B4DFF 80%, #FF3EEA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px rgba(0, 200, 255, 0.35));
+}
+
+
+/* ============================
+   CARD HEADING GRADIENT
+=============================== */
+.choose-title {
+    font-size: 25px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #00C4FF 0%, #0099FF 40%, #8B4DFF 80%, #FF3EEA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ============================
+   CHOOSE CARD (AI / GLASS STYLE)
+=============================== */
+.choose-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    transition: 0.3s ease-in-out;
+    color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+
+/* ============================
+   CARD HOVER GLOW
+=============================== */
+.choose-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 0 25px rgba(0, 196, 255, 0.35),
+        0 0 40px rgba(155, 75, 255, 0.25),
+        0 0 50px rgba(255, 60, 230, 0.15);
+    border-color: rgba(0, 196, 255, 0.4);
+}
+
+
+/* ============================
+   ICON STYLE
+=============================== */
+.choose-card .icon i {
+    color: #00C4FF;
+    font-size: 36px;
+    transition: 0.3s;
+}
+
+.choose-card:hover .icon i {
+    color: #FF3EEA;
+    text-shadow: 0 0 12px rgba(255, 0, 180, 0.7);
+}
+.icon i {
+    color: #00C4FF;
+    transition: 0.3s;
+}
+
+.choose-card:hover .icon i {
+    color: #00FFCC;
+    text-shadow: 0 0 12px rgba(0, 255, 204, 0.7);
+}
+
+/* feacture section start ====================*/
+
+
+/* Gradient Section Title */
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00C4FF, #0099FF, #8B4DFF, #FF3EEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px rgba(0, 200, 255, 0.35));
+}
+
+/* Gradient Section Title */
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00C4FF, #0099FF, #8B4DFF, #FF3EEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px rgba(0, 200, 255, 0.35));
+}
+
+/* Feature Card Glassmorphism */
+.feature-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    border-radius: 12px;
+}
+
+/* Glow Hover */
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 0 25px rgba(0, 196, 255, 0.35),
+        0 0 40px rgba(155, 75, 255, 0.25),
+        0 0 50px rgba(255, 60, 230, 0.15);
+    border-color: rgba(0, 196, 255, 0.4);
+}
+
+/* Icon Style */
+.feature-card .icon i {
+    color: #00C4FF;
+    transition: 0.3s;
+}
+
+.feature-card:hover .icon i {
+    color: #FF3EEA;
+    text-shadow: 0 0 12px rgba(255, 0, 180, 0.7);
+}
+
+/* Feature Title Gradient */
+.feature-title {
+    font-size: 25px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #00C4FF, #0099FF, #8B4DFF, #FF3EEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* JOIN NOW BUTTON */
+.join-btn {
+   background: linear-gradient(90deg, #00C4FF 0%, #8241eb 100%);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 15px 30px;
+    transition: 0.3s;
+}
+
+.join-btn:hover {
+   box-shadow: 0 0 15px rgba(0, 196, 255, 0.8), 0 0 25px rgba(0, 255, 204, 0.6);
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+
+
+
+
+
+
+/* feacture section over ===================*/
+
+/* testimonial section satrt========== */
+/* Gradient Section Title */
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00C4FF, #0099FF, #8B4DFF, #FF3EEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px rgba(0, 200, 255, 0.35));
+}
+
+/* Testimonial Card Glassmorphism */
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+/* Hover Glow */
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 0 25px rgba(0, 196, 255, 0.35),
+        0 0 40px rgba(155, 75, 255, 0.25),
+        0 0 50px rgba(255, 60, 230, 0.15);
+    border-color: rgba(0, 196, 255, 0.4);
+}
+
+/* User Image */
+.testimonial-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 196, 255, 0.5);
+    box-shadow: 0 0 12px rgba(0, 196, 255, 0.5);
+}
+
+/* Name Gradient */
+.testimonial-name {
+    font-size: 25px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #00C4FF, #0099FF, #8B4DFF, #FF3EEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Text */
+.testimonial-text {
+    font-size: 25px;
+    margin-top: 10px;
+    opacity: 0.85;
+}
+
+
+/* testimonial section over========== */
+
+/* faq section start============ */
+/* Gradient Section Title */
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00C4FF 0%, #0099FF 40%, #8B4DFF 80%, #FF3EEA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px rgba(0, 200, 255, 0.35));
+}
+
+/* FAQ Card Glassmorphism */
+.faq-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    border-radius: 12px;
+}
+
+/* Glow Hover */
+.faq-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 0 25px rgba(0, 196, 255, 0.35),
+        0 0 40px rgba(155, 75, 255, 0.25),
+        0 0 50px rgba(255, 60, 230, 0.15);
+    border-color: rgba(0, 196, 255, 0.4);
+}
+
+/* Icon Style */
+.faq-card .icon i {
+    color: #00C4FF;
+    font-size: 36px;
+    transition: 0.3s;
+}
+
+.faq-card:hover .icon i {
+    color: #FF3EEA;
+    text-shadow: 0 0 12px rgba(255, 0, 180, 0.7);
+}
+
+/* FAQ Title Gradient */
+.faq-title {
+    font-size: 22px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #00C4FF 0%, #0099FF 40%, #8B4DFF 80%, #FF3EEA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Join Now Button - Gradient + Neon Glow */
+.join-btn {
+    background: linear-gradient(90deg, #00C4FF 0%, #0099FF 40%, #8B4DFF 80%, #FF3EEA 100%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,196,255,0.4), 0 0 20px rgba(155,75,255,0.3);
+    position: relative;
+    z-index: 1;
+}
+
+/* Glow Layer Behind Button */
+.join-btn::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(90deg, #00C4FF 0%, #0099FF 40%, #8B4DFF 80%, #FF3EEA 100%);
+    border-radius: 12px;
+    filter: blur(12px);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* Hover Effect */
+.join-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,196,255,0.7), 0 0 25px rgba(155,75,255,0.6), 0 0 35px rgba(255,60,230,0.5);
+}
+
+
+
+
+/* faq section start============ */
+
+ /* Section background gradient */
+  /* Sponsored Tasks Section */
+.sponsored-tasks-section {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding: 40px 0;
+}
+
+/* Gradient Section Title */
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00C4FF, #0099FF, #8B4DFF, #FF3EEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px rgba(0, 200, 255, 0.35));
+}
+
+/* Section Description */
+.section-description {
+    color: #fff;
+    margin-bottom: 20px;
+    opacity: 0.85;
+}
+
+/* Task Reasons List */
+.task-reasons {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #fff;
+    opacity: 0.85;
+}
+
+.task-reasons li {
+    margin-bottom: 10px;
+}
+
+/* Join Now Button */
+.join-now-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #00C4FF, #0099FF, #8B4DFF, #FF3EEA);
+    color: #fff;
+    padding: 12px 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: 0.3s 
+ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.4);
+}
+
+.join-now-btn:hover {
+    background: linear-gradient(90deg, #FF3EEA, #8B4DFF, #00C4FF);
+    box-shadow: 0 0 25px rgba(255, 60, 230, 0.35);
+    transform: translateY(-5px);
+}
+
+/* new-release============ */
+/* Gradient Section Title */
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00C4FF, #0099FF, #8B4DFF, #FF3EEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px rgba(0, 200, 255, 0.35));
+}
+
+/* FAQ Card Glassmorphism */
+.faq-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+/* Hover Glow */
+.faq-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 0 25px rgba(0, 196, 255, 0.35),
+        0 0 40px rgba(155, 75, 255, 0.25),
+        0 0 50px rgba(255, 60, 230, 0.15);
+    border-color: rgba(0, 196, 255, 0.4);
+}
+
+/* FAQ Question */
+.faq-question {
+    font-size: 20px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #00C4FF, #0099FF, #8B4DFF, #FF3EEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+/* FAQ Answer */
+.faq-answer {
+    font-size: 25px;
+    opacity: 0.85;
+}

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'latha';
+    src: url('../fonts/latha.eot');
+    src: url('../fonts/latha.eot') format('embedded-opentype'),
+         url('../fonts/latha.woff2') format('woff2'),
+         url('../fonts/latha.woff') format('woff'),
+         url('../fonts/latha.ttf') format('truetype'),
+         url('../fonts/latha.svg#latha') format('svg');
+}
+@font-face{
+	font-family: 'Georgia';
+	src:url('../fonts/Georgia.eot') ;
+	src:url('../fonts/Georgia.woff') format('woff');
+}
+
