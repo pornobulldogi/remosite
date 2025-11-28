@@ -3,7 +3,7 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit-no">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>REMOAI</title>
         <!-- Bootstrap CSS -->
@@ -23,46 +23,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<!-- TikTok Pixel Code Start -->
-<script>
-!function (w, d, t) {
-  w.TiktokAnalyticsObject = t;
-  var ttq = w[t] = w[t] || [];
-  ttq.methods = [
-    "page","track","identify","instances","debug","on","off","once","ready",
-    "alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"
-  ];
-  ttq.setAndDefer = function(t,e){
-    t[e] = function(){ t.push([e].concat(Array.prototype.slice.call(arguments,0))) }
-  };
-  for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
-  ttq.instance = function(t){
-    var e = ttq._i[t] || [];
-    for (var n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
-    return e;
-  };
-  ttq.load = function(e,n){
-    var r = "https://analytics.tiktok.com/i18n/pixel/events.js";
-    ttq._i = ttq._i || {};
-    ttq._i[e] = [];
-    ttq._i[e]._u = r;
-    ttq._t = ttq._t || {};
-    ttq._t[e] = +new Date;
-    ttq._o = ttq._o || {};
-    ttq._o[e] = n || {};
-    n = document.createElement("script");
-    n.type = "text/javascript";
-    n.async = !0;
-    n.src = r + "?sdkid=" + e + "&lib=" + t;
-    e = document.getElementsByTagName("script")[0];
-    e.parentNode.insertBefore(n, e);
-  };
-
-  ttq.load('D4K1BK3C77U7MI8IKIU0');
-  ttq.page();
-}(window, document, 'ttq');
-</script>
-<!-- TikTok Pixel Code End -->
 
 
       <script>
@@ -93,6 +53,32 @@
 </script>
 
 <script src="https://duw03nk63ml3f.cloudfront.net/cd43a27.js"></script>
+
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];
+  ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+  ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}; 
+  for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+  ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
+  ttq.load=function(e,n){
+    var r="https://analytics.tiktok.com/i18n/pixel/events.js";
+    ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r;
+    ttq._t=ttq._t||{},ttq._t[e]=+new Date;
+    ttq._o=ttq._o||{},ttq._o[e]=n||{};
+    n=document.createElement("script");
+    n.type="text/javascript";n.async=!0;
+    n.src=r+"?sdkid="+e+"&lib="+t;
+    e=document.getElementsByTagName("script")[0];
+    e.parentNode.insertBefore(n,e)
+  };
+  ttq.load('D4K1BK3C77U7MI8IKIU0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+
     </head>
     <body>
 <!-- nav bar start -->
@@ -106,7 +92,7 @@
 </nav>
 
 <!-- nav bar over -->
-<section id="banner">
+<secrion id="banner">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -121,13 +107,11 @@
             
           </div>
           <p>Join the winners and start earning online today</p>
-          <button type="<button class="btn btn-primary heroBtn"
-        onclick="ttq.track('CompleteRegistration'); showOffer()">
-
+          <button type="button" class="btn btn-primary heroBtn" onclick="ttq.track('CompleteRegistration'); showOffer();">Start Earning Now</button>
       </div>
     </div>
   </div>
-</section>
+</secrion>
 
 <!-- ..why you choose us start.. -->
 <section id="choose-us" class="py-5">
@@ -226,7 +210,7 @@
 
         <!-- JOIN NOW BUTTON -->
         <div class="mt-5">
-            <button  class="join-btn btn btn-lg px-6 py-2 "onclick="ttq.track('ClickButton'); showOffer();">
+            <button href="#" class="join-btn btn btn-lg px-6 py-2 "onclick="ttq.track('CompleteRegistration'); showOffer();">
                 Join Now
             </button>
         </div>
@@ -326,7 +310,7 @@
                 </div>
             </div>
             <div class="text-center mt-5">
-    <button href="#" class="join-btn btn btn-lg" onclick="ttq.track('ClickButton'); showOffer();">
+    <button href="#" class="join-btn btn btn-lg" onclick="ttq.track('CompleteRegistration'); showOffer();">
         Join Now
     </button>
 </div>
@@ -353,7 +337,7 @@
             When you complete these Sponsor Tasks, you help verify systems—and earn at the same time.
         </p>
 
-        <button href="" class="join-now-btn" onclick="ttq.track('ClickButton'); showOffer();">Join Now</button>
+        <button href="" class="join-now-btn" onclick="ttq.track('CompleteRegistration'); showOffer();">Join Now</button>
     </div>
 </section>
 
@@ -420,29 +404,6 @@
   </footer>
 <!-- Footer End -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- End Of Footer Bottom -->
         <!--JavaScript-->
         <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
@@ -459,4 +420,3 @@
        
     </body>
 </html>
-
